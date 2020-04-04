@@ -5,24 +5,24 @@
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: url(./img/img07.jpg) no-repeat center / cover;
+    color: #011133;
 
 }
 
 .container {
     width: 70%;
-    margin: 0 auto;
+    margin: 10px auto;
     box-sizing: border-box;
-    min-height: 100vh;
+    min-height: calc(100vh - 30px);
+    background-color:rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
 }
 
 h1 {
     text-align: center;
     padding-top: 50px;
-    margin-bottom: 50px;
-}
-
-form {
-
+    margin-bottom: 20px;
 }
 
 select,
@@ -36,7 +36,7 @@ input {
 p {
     width: 100%;
     margin-top: 8px;
-
+    padding-left: 5px;
 }
 
 .btn {
@@ -44,15 +44,16 @@ p {
     margin: 20px;
     padding: 10px;
     border-radius: 15px;
-    border-style: outset;
-    border-width: 3px;
+    border-style: inset;
+    border-width: 2px;
     border-color: grey;
-    background-color: transparent;
+    background-color: white;
 }
 
 .title {
     margin-top: 20px;
     margin-bottom: 10px;
+    padding-left: 5px;
     background-color: lightgray;
 
 }
