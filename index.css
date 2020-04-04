@@ -5,17 +5,54 @@
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: blueviolet;
+
 }
 
 .container {
     width: 70%;
     margin: 0 auto;
     box-sizing: border-box;
-    background-color: thistle;
     min-height: 100vh;
 }
+
 h1 {
     text-align: center;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+form {
+
+}
+
+select,
+input {
+    width: 100%;
+    margin-top: 4px;
+    margin-bottom: 2px;
+    line-height: 20px;
+}
+
+p {
+    width: 100%;
+    margin-top: 8px;
+
+}
+
+.btn {
+    float: right;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    border-style: outset;
+    border-width: 3px;
+    border-color: grey;
+    background-color: transparent;
+}
+
+.title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-color: lightgray;
 
 }
