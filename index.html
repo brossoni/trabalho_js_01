@@ -3,14 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./grid.css">
+    <link rel="stylesheet" href="./index.css">
     <title>Exercício 2: Cadastro de Usuários</title>
 </head>
 <body>
-    <h1>Cadastro de Novos Usuários</h1>
-    <form>
-        <fieldset>
+    <div class="container">
+        <h1>Cadastro de Novos Usuários</h1>
+        <form >
+            <div class="row">
+                <div class="col col-12">
+                    <h2>Dados Pessoais</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-4">
+                    <p>Nome Completo:</p>
+                    <p>Endereço:</p>
+                    <p>Cidade:</p>
+                    <p>Estado:</p>
 
-        </fieldset>
-    </form>
+                </div>
+                <div class="col col-4">
+                    <input type="text" name="nome" required>
+                    <input type="text" name="endereco" required>
+                    <input type="text" name="cidade" required>
+                    <select name="estado" required>
+                        <option>Rio Grande do Sul</option>
+                        <option>Santa Catarina</option>
+                        <option>Paraná</option>
+                        <option>São Paulo</option>
+                        <option>Rio de Janeiro</option>
+                        <option>Espírito Santo</option>
+                        <option>Minas Gerais</option>
+                        <option>Mato Grosso</option>
+                        <option>Bahia</option>
+                        <option>Rio Grande do Norte</option>
+                        <option>Amapá</option>
+                        <option>Amazonas</option>
+                        </select>
+
+                </div>
+                <div class="col col-4">
+                    
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col col-12">
+                    <h2>Dados do Sistema</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-4" style="background-color: rgb(255,0,0);">
+                    <p>Nome de Usuário:</p>
+                    <p>Senha:</p>
+                    <p>Confirme a Senha:</p>
+                </div>
+                <div class="col col-4" style="background-color: rgb(255,255,0);">
+                    <input type="text" name="user" required>
+                    <input type="password" name="senha" required>
+                    <input type="password" name="conf-senha" required>
+                    <button type="submit">Cadastrar o Usuário</button>
+                </div>
+                <div class="col col-4" style="background-color: rgb(255, 145, 0);">   
+                    <p>
+                               
+                    </p>
+                </div>
+            </div>
+            
+        </form>
+    </div>
+    
 </body>
 </html>
