@@ -24,23 +24,23 @@
                     <p>Estado:</p>
                 </div>
                 <div class="col col-4">
-                    <form name="dados" action="pagina de ação" method="post">
-                    <input type="text" name="nome" required>
-                    <input type="text" name="endereco" required>
-                    <input type="text" name="cidade" required>
-                    <select name="estado" required>
-                        <option>Rio Grande do Sul</option>
-                        <option>Santa Catarina</option>
-                        <option>Paraná</option>
-                        <option>São Paulo</option>
-                        <option>Rio de Janeiro</option>
-                        <option>Espírito Santo</option>
-                        <option>Minas Gerais</option>
-                        <option>Mato Grosso</option>
-                        <option>Bahia</option>
-                        <option>Rio Grande do Norte</option>
-                        <option>Amapá</option>
-                        <option>Amazonas</option>
+                    <form name="dados">
+                        <input type="text" name="nome" >
+                        <input type="text" name="endereco" >
+                        <input type="text" name="cidade" >
+                        <select name="estado" >
+                            <option>Rio Grande do Sul</option>
+                            <option>Santa Catarina</option>
+                            <option>Paraná</option>
+                            <option>São Paulo</option>
+                            <option>Rio de Janeiro</option>
+                            <option>Espírito Santo</option>
+                            <option>Minas Gerais</option>
+                            <option>Mato Grosso</option>
+                            <option>Bahia</option>
+                            <option>Rio Grande do Norte</option>
+                            <option>Amapá</option>
+                            <option>Amazonas</option>
                         </select>
                     </form>    
                 </div>
@@ -60,11 +60,11 @@
                     <p>Confirme a Senha:</p>
                 </div>
                 <div class="col col-4">
-                    <form name="dados" action="pagina de ação" method="post">
-                    <input type="text" name="user" required>
-                    <input type="password" name="senha" required>
-                    <input type="password" name="confirma_senha" required>
-                    <button type="submit" onSubmit="return verificaDados()" class="btn">Cadastrar Usuário</button>
+                    <form name="dados" >
+                    <input type="text" name="user" >
+                    <input type="password" name="senha" >
+                    <input type="password" id="confirma_senha" >
+                    <button id="cadastrar" class="btn">Cadastrar Usuário</button>
                     </form>
                 </div>
                 <div class="col col-4">   
@@ -74,7 +74,7 @@
             </div>         
         </form>
     </div>   
-    <script src="index.js"></script>    
+    <script language="JavaScript" src="./index.js"></script>    
 </body>
 
 </html>
