@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./grid.css">
     <link rel="stylesheet" href="./index.css">
-    <script language=javascript type="text/javascript">
     <title>Exercício 2: Cadastro de Usuários</title>
 </head>
 <body>
@@ -23,9 +22,9 @@
                     <p>Endereço:</p>
                     <p>Cidade:</p>
                     <p>Estado:</p>
-
                 </div>
                 <div class="col col-4">
+                    <form name="dados" action="pagina de ação" method="post">
                     <input type="text" name="nome" required>
                     <input type="text" name="endereco" required>
                     <input type="text" name="cidade" required>
@@ -43,6 +42,7 @@
                         <option>Amapá</option>
                         <option>Amazonas</option>
                         </select>
+                    </form>    
                 </div>
                 <div class="col col-4">
                     
@@ -60,10 +60,12 @@
                     <p>Confirme a Senha:</p>
                 </div>
                 <div class="col col-4">
+                    <form name="dados" action="pagina de ação" method="post">
                     <input type="text" name="user" required>
-                    <input type="password" name="senha1" required>
-                    <input type="password" name="senha2" required>
-                    <button type="submit" onClick="verificarSenhas" class="btn">Cadastrar Usuário</button>
+                    <input type="password" name="senha" required>
+                    <input type="password" name="confirma_senha" required>
+                    <button type="submit" onSubmit="return verificaDados()" class="btn">Cadastrar Usuário</button>
+                    </form>
                 </div>
                 <div class="col col-4">   
                     <p>                             
@@ -72,5 +74,7 @@
             </div>         
         </form>
     </div>   
+    <script src="index.js"></script>    
 </body>
+
 </html>
