@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./grid.css">
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/index.css">
     <title>Exercício 2: Cadastro de Usuários</title>
 </head>
 <body>
     <div class="container">
         <h1>Cadastro de Novos Usuários</h1>
-        <form >
+        <form name="dados" id="form" action="./confirmacao.html" method="get">
             <div class="row">
                 <div class="col col-12 title">
                     <h2>Dados Pessoais</h2>
@@ -24,28 +24,26 @@
                     <p>Estado:</p>
                 </div>
                 <div class="col col-4">
-                    <form name="dados">
-                        <input type="text" name="nome" >
-                        <input type="text" name="endereco" >
-                        <input type="text" name="cidade" >
-                        <select name="estado" >
-                            <option>Rio Grande do Sul</option>
-                            <option>Santa Catarina</option>
-                            <option>Paraná</option>
-                            <option>São Paulo</option>
-                            <option>Rio de Janeiro</option>
-                            <option>Espírito Santo</option>
-                            <option>Minas Gerais</option>
-                            <option>Mato Grosso</option>
-                            <option>Bahia</option>
-                            <option>Rio Grande do Norte</option>
-                            <option>Amapá</option>
-                            <option>Amazonas</option>
-                        </select>
-                    </form>    
+                    <input type="text" name="nome" id="nome" >
+                    <input type="text" name="endereco" id="endereco" >
+                    <input type="text" name="cidade" id="cidade" >
+                    <select name="estado" id="estado" >
+                        <option value="" disabled selected>Selecione...</option>
+                        <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                        <option value="Santa Catarina">Santa Catarina</option>
+                        <option value="Paraná">Paraná</option>
+                        <option value="São Paulo">São Paulo</option>
+                        <option value="Rio de Janeiro">Rio de Janeiro</option>
+                        <option value="Espírito Santo">Espírito Santo</option>
+                        <option value="Minas Gerais">Minas Gerais</option>
+                        <option value="Mato Grosso">Mato Grosso</option>
+                        <option value="Bahia">Bahia</option>
+                        <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+                        <option value="Amapá">Amapá</option>
+                        <option value="Amazonas">Amazonas</option>
+                    </select>
                 </div>
-                <div class="col col-4">
-                    
+                <div class="col col-4"> 
                 </div>
             </div>
             <div class="row">
@@ -60,12 +58,10 @@
                     <p>Confirme a Senha:</p>
                 </div>
                 <div class="col col-4">
-                    <form name="dados" >
-                    <input type="text" name="user" >
-                    <input type="password" name="senha" >
-                    <input type="password" id="confirma_senha" >
-                    <button id="cadastrar" class="btn">Cadastrar Usuário</button>
-                    </form>
+                    <input type="text" name="user" id="user" >
+                    <input type="password" name="senha1" id="senha1">
+                    <input type="password" name="senha2" id="senha2">
+                    <button onclick="validacao()" type="button"  id="cadastrar" class="btn">Cadastrar Usuário</button>
                 </div>
                 <div class="col col-4">   
                     <p>                             
@@ -74,7 +70,7 @@
             </div>         
         </form>
     </div>   
-    <script language="JavaScript" src="./index.js"></script>    
+    <script src="./js/index.js"></script>    
 </body>
 
 </html>

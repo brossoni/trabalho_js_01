@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: url(../img/img07.jpg) no-repeat center ;
+    color: #011133;
+    
+
+}
+
+.container {
+    width: 70%;
+    margin: 120px auto;
+    box-sizing: border-box;
+    background-color:rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    padding-bottom: 30px;
+    
+}
+
+h1 {
+    text-align: center;
+    padding-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+p {
+    width: 100%;
+    margin-top: 10px;
+    text-align: left;
+    margin-left: 250px;
+}
